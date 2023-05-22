@@ -7,6 +7,7 @@ use App\Http\Controllers\adminController;
 use App\Http\Controllers\PlacesController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\newplaceController;
+use App\Http\Controllers\uniplaceController;
 use App\Http\Controllers\InformationController;
 
 /*
@@ -25,7 +26,7 @@ use App\Http\Controllers\InformationController;
 Route::get('/', [homeController::class,'index']);
 Route::get('/profile',[ProfileController::class,'myprofile']);
 Route::get('/info',[InformationController::class,'info']);
-
+Route::get('/uniplace/{id}',[uniplaceController::class,'show'])->name('uniplace.show');
 // admin routes
 Route::get('/admin',[adminController::class,'index']);
 Route::get('/places',[PlacesController::class,'placeList']);

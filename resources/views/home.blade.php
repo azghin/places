@@ -136,7 +136,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             @foreach ($data as $item)
-            <a href="#">
+            <a href="{{ route('uniplace.show', ['id' => $item->id]) }}">
                 <div class="carousel-item {{ $loop->first ? 'active' : '' }} ">
                     <img src="img/{{ $item->logo }}" class="bd-placeholder-img" width="100%" height="100%" alt="Slide Image">
                     <div class="carousel-caption d-none d-md-block">
