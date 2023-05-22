@@ -1,23 +1,23 @@
-<nav class="navbar  navbar-light bg-light">
-    <a class="navbar-brand" href="/">Places</a>
-     <div>
-        <ul class="nav ">
-            <li class="nav-item">
-                <a href="/profile" class="nav-link">profile</a>
-            </li>
-            <li class="nav-item">
-                <a href="/info" class="nav-link">info</a>
-            </li>
-            <li class="nav-item">
-                <a href="/newplace" class="nav-link">Add newplace</a>
-            </li>
-    </ul>
-     </div>
-    <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">PLACES</a>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " href="/" aria-current="page">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile">profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">info</a>
+                </li>
+                
+
+            </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">log out</button>
+        </div>
+    </div>
 </nav>
 
        

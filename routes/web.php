@@ -20,11 +20,16 @@ use App\Http\Controllers\InformationController;
 |
 */
 
+
+// users routes
 Route::get('/', [homeController::class,'index']);
 Route::get('/profile',[ProfileController::class,'myprofile']);
 Route::get('/info',[InformationController::class,'info']);
+
+// admin routes
+Route::get('/admin',[adminController::class,'index']);
 Route::get('/places',[PlacesController::class,'placeList']);
 Route::get('/newplace',[newplaceController::class,'addForm']);
 Route::post('/newplace',[newplaceController::class,'addNew']);
-Route::get('/admin',[adminController::class,'index']);
+
 

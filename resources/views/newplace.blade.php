@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.admin')
 @section('content')
     <h1>ADD PLACE</h1>
     <form action="/newplace" method="POST">
@@ -15,6 +15,7 @@
         <label for="description">description</label>
         <input type="text" class="form-control" name="description" id="description">
         <br>
+        <label for="Images"></label>
         <button type="submit" class="btn btn-primary">ADD place</button>
     </form>
 @endsection
