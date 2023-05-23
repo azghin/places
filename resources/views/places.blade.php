@@ -29,24 +29,32 @@
     <div id="map" style="width: 100%;height: 300px;">
 
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt5k-sCaEODnX5vPF517RZEOwDjzFJrig" defer></script>
+    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt5k-sCaEODnX5vPF517RZEOwDjzFJrig" defer></script> --}}
 </div>
-
+<script async  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt5k-sCaEODnX5vPF517RZEOwDjzFJrig&callback=initMap"></script>
 <script>
-    let map;
+    
 
-    function showMap(lat,long) {
+    function initMap(lat,long) {
     var coord = {lat:lat,lng:long};
-    new google.maps.Map(
+
+    var map = new google.maps.Map(
             document.getElementById("map"),{
                 zoom:10,
                 center:coord
             }
         );
+
+        new google.maps.Marker({
+        position:coord,
+        map:map
+        })
     }
 
-    showMap(35.778555682753414, -5.808295979212141);
+    
+
+    initMap(35.778555682753414,-5.808295979212141);
 </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt5k-sCaEODnX5vPF517RZEOwDjzFJrig&callback=showMap"></script>
+
 @endsection

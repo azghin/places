@@ -11,7 +11,7 @@
 
 
 
-    <style>
+    <script>
         let map;
 
         function showMap(lat,long) {
@@ -25,7 +25,7 @@
         }
 
         showMap(0,0);
-    </style>
+    </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt5k-sCaEODnX5vPF517RZEOwDjzFJrig&callback=showMap"></script>
 
 @endsection
