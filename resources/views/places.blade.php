@@ -1,4 +1,7 @@
 @extends('layouts.admin')
+@section('MapAPI')
+<script  defer src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap&language=fr&key=AIzaSyB4rQXALT8miSahBlXgjzGN4VP8gZAB1-s"  type="text/javascript"></script>
+@endsection
 @section('content')
 <table class="table-bordered w-75 p-3">
     <thead>
@@ -33,8 +36,16 @@
 </div>
 <script async  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt5k-sCaEODnX5vPF517RZEOwDjzFJrig&callback=initMap"></script>
 <script>
-    
+    function initMap() {
+      const coord = { lat: 35.778555682753414, lng: -5.808295979212141 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        scaleControl: true,
+        center: coord,
+        zoom: 10,
+      });
 
+    }
+/*
     function initMap(lat,long) {
     var coord = {lat:lat,lng:long};
 
@@ -51,7 +62,7 @@
         })
     }
 
-    
+    */
 
     initMap(35.778555682753414,-5.808295979212141);
 </script>
