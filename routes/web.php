@@ -9,6 +9,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\newplaceController;
 use App\Http\Controllers\uniplaceController;
 use App\Http\Controllers\InformationController;
+use App\Http\Controllers\updatePlaceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +31,10 @@ Route::get('/uniplace/{id}',[uniplaceController::class,'show'])->name('uniplace.
 // admin routes
 Route::get('/admin',[adminController::class,'index']);
 Route::get('/places',[PlacesController::class,'placeList']);
+Route::delete('/places/{id}', [PlacesController::class,'deletePlace'])->name('deleteplace');
 Route::get('/newplace',[newplaceController::class,'addForm']);
 Route::post('/newplace',[newplaceController::class,'addNew']);
+Route::get('/update/{id}',[updatePlaceController::class,'index'])->name('update.show');
+Route::put('/update/{places}',[updatePlaceController::class,'updatePlace'])->name('update');
 
 

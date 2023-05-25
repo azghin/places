@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class places extends Model
 {
     use HasFactory;
-    protected $fillable = ['title','local','description'];
+    protected $fillable = ['title','latitude','longitude','description','image'];
     protected $table = 'places';
 }

@@ -12,4 +12,18 @@ class PlacesController extends Controller
 
         return view('places',compact('data'));
     }
+
+    public function deletePlace($id){
+        $item = places::find($id);
+
+        // Check if the row exists
+        if ($item) {
+            // Delete the row
+            $item->delete();
+    
+            return redirect()->back()->with('success', 'Row deleted successfully.');
+        }
+    
+        return redirect()->back()->with('error', 'Row not found.');
+    }
 }
