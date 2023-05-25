@@ -46,6 +46,7 @@
 </div>
 <script async  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt5k-sCaEODnX5vPF517RZEOwDjzFJrig&callback=initMap"></script>
 <script>
+<<<<<<< HEAD
     function initMap(lt,lg) {
       const coord = { lat: lt, lng: lg };
       const map = new google.maps.Map(document.getElementById("map"), {
@@ -57,6 +58,15 @@
         position:coord,
         map:map
       })
+=======
+    function initMap() {
+      const coord = { lat: 35.778555682753414, lng: -5.808295979212141 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        scaleControl: true,
+        center: coord,
+        zoom: 10,
+      });
+>>>>>>> 0a8a4acbd8e42b75dbd197fe26e9030d173d6721
 
     }
 /*
