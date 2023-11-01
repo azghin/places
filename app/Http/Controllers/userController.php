@@ -57,7 +57,7 @@ class userController extends Controller
         //     'last_name' => $request->last_name
         // ]);
         $user->save();
-        return redirect()->route('admin.profil');
+        return redirect()->route('admin/profil');
     }
     public function list(){
         $users = User::all();

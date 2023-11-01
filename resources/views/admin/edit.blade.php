@@ -32,7 +32,9 @@
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <img class="col-4" src="../storage/{{$data->image}}" alt="">
+                    {{-- <img class="col-4" src="../storage/{{$data->image}}" alt=""> --}}
+                    <img src="../storage/{{$data->image}}" alt="avatar" class="col-4" style="width: 150px;">
+    
                     <div class="col-8">
                         <input type="file" name="image" id="image" class="form-control">
                     </div>

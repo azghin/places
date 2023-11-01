@@ -14,6 +14,7 @@ class adminController extends Controller
     public function index(){
         $count = places::count();
         $countU = User::count();
+        // $countA = User::count()->where();
         return view('admin.dashboard',compact('count','countU'));
     }
     public function list(){
