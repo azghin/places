@@ -10,13 +10,9 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<<<<<<< HEAD
 
     @yield('MapAPI')
 
-=======
-  @yield('MapAPI')
->>>>>>> 0a8a4acbd8e42b75dbd197fe26e9030d173d6721
 </head>
 
 <body>

@@ -7,7 +7,6 @@
     <h1>ADD PLACE</h1>
     <form action="/newplace" method="POST" enctype="multipart/form-data">
         @csrf
-<<<<<<< HEAD
         <br>
         <label for="title">title</label>
         <input type="text" class="form-control" name="title" id="title" >
@@ -24,30 +23,6 @@
         <label for="image">Images</label>
         <input type="file" name="image" id="image" >
         <br>
-=======
-        {{-- <label for="id">id</label>
-        <input type="text" name="id" id="id"> --}}
-        
-        <label for="titel">Titel</label>
-            <input type="text" class="form-control" name="titel" id="titel">
-        
-        <label for="local">local</label>
-        
-            <input id="map-search" name="map-search" class="form-control" type="text" placeholder="Entrer votre adresse" >
-        <label for="latitude">Lat</label>
-            <input type="text" class="latitude form-control" id="latitude" name="latitude" >
-        <label for="longitude">Long</label> 
-            <input type="text" class="longitude form-control" id="longitude"  name="longitude" >
-        <label for="country">City </label>
-            <input type="text" class="reg-input-city form-control" placeholder="City" id="country" >
-
-        <div id="map-canvas" class="m-3"></div>
-        
-        <label for="description">description</label>
-        <input type="text" class="form-control" name="description" id="description">
-        
-        <label for="Images"></label>
->>>>>>> 0a8a4acbd8e42b75dbd197fe26e9030d173d6721
         <button type="submit" class="btn btn-primary">ADD place</button>
     </form>
 </div>
@@ -62,16 +37,11 @@
             margin-bottom: 10px;
         }
     </style>
-<<<<<<< HEAD
     {{-- <script >
-=======
-    <script >
->>>>>>> 0a8a4acbd8e42b75dbd197fe26e9030d173d6721
         function initialize() {
        
            var mapOptions, map, marker, searchBox, city,
                infoWindow = '',
-<<<<<<< HEAD
             //    addressEl = document.querySelector( '#map-search' ),
                latEl = document.querySelector( '.latitude' ),
                longEl = document.querySelector( '.longitude' ),
@@ -83,19 +53,6 @@
                zoom: 10,
                // Current Lat and Long position of the pin/
                center: new google.maps.LatLng(35.778555682753414, -5.808295979212141), 
-=======
-               addressEl = document.querySelector( '#map-search' ),
-               latEl = document.querySelector( '.latitude' ),
-               longEl = document.querySelector( '.longitude' ),
-               element = document.getElementById( 'map-canvas' );
-               city = document.querySelector( '.reg-input-city' );
-           
-           mapOptions = {
-               // How far the maps zooms in.
-               zoom: 8,
-               // Current Lat and Long position of the pin/
-               center: new google.maps.LatLng(35.778555682753414, -5.808295979212141),
->>>>>>> 0a8a4acbd8e42b75dbd197fe26e9030d173d6721
                disableDefaultUI: false, // Disables the controls like zoom control on the map if set to true
                scrollWheel: true, // If set to false disables the scrolling on the map.
                draggable: true, // If set to false , you cannot move the map around.
@@ -235,9 +192,5 @@
            
        
         }
-<<<<<<< HEAD
     </script> --}}
-=======
-       </script>
->>>>>>> 0a8a4acbd8e42b75dbd197fe26e9030d173d6721
 @endsection
